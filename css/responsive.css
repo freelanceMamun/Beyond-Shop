@@ -642,6 +642,17 @@
   .banner-area-full a img {
     border-radius: 9px;
   }
+  .image-box {
+    height: 165px;
+    border-radius: 50%;
+    width: 165px;
+    background-color: #f0f0ee;
+    overflow: hidden;
+  }
+  .Categories-card-inner .title h5 {
+    font-size: 19px;
+    text-align: center;
+  }
 
   .Mobile_nav {
     display: block;
@@ -659,10 +670,10 @@
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
   .container-cum {
-    max-width: 95%;
+    max-width: 100%;
     margin: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   /* .hero_area {
@@ -1252,12 +1263,16 @@
     --bs-gutter-x: 3px;
   }
   .box-inner-categories .image-box {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
   }
   .Categories-card-inner .title h5 {
     text-align: center;
     font-size: 11px;
+  }
+
+  .banner-hero-area .row {
+    --bs-gutter-x: 0px !important;
   }
 
   /* === Response Search === */
