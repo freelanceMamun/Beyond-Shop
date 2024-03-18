@@ -113,7 +113,7 @@ select.addEventListener('click', () => {
 });
 
 const element = `<span>
-<img src="img/Ellipse 2.svg" style="width: 25px" alt="">
+<img src="img/Ellipse-2.svg" style="width: 25px" alt="">
 EN
 </span>`;
 
