@@ -1,0 +1,49 @@
+:root {
+  scroll-behavior: unset;
+  font-family: 'Inter', sans-serif;
+  --primary-color: #9600c1;
+  --text-color: #000000;
+}
+
+.shop_container {
+  padding: 2rem 0;
+}
+
+.shop-serv {
+  display: flex;
+  gap: 1rem;
+}
+
+.shop-serv a {
+  display: block;
+  width: 310px;
+  height: 60px;
+  border-radius: 9px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shop-serv a span {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.scored {
+  background: rgba(255, 184, 0, 0.4);
+}
+
+.delivery {
+  border-radius: 9px;
+  background: rgba(0, 164, 36, 0.2);
+}
+
+.shop-featurch {
+  margin-top: 22px;
+}

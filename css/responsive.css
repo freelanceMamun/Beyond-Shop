@@ -1,7 +1,6 @@
 /*--- Extra large devices (large desktops, 1400px and up) -----*/
 
 @media (min-width: 1600px) {
-
   .container-cum {
     max-width: 1560px;
     margin: auto;
@@ -178,11 +177,11 @@
     height: 256px;
   }
 
-  .product-discription .title{
+  .product-discription .title {
     font-size: 22px;
   }
 
-  .short-disription{
+  .short-disription {
     font-size: 18px;
   }
 
@@ -190,19 +189,19 @@
     width: 24px;
   }
 
-  .current-price{
+  .current-price {
     font-size: 28px;
   }
 
-  .trams p{
+  .trams p {
     font-size: 18px;
   }
 
-  .navigation-menu ul li a{
+  .navigation-menu ul li a {
     font-size: 43px;
   }
 
-  .usefulllinks ul li a{
+  .usefulllinks ul li a {
     font-size: 20px;
   }
 
@@ -213,7 +212,6 @@
   .contact-information .information h3 {
     font-size: 20px;
   }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -790,5 +788,11 @@
   }
   .owl-nav button span {
     font-size: 15px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation-menu {
+    display: block;
   }
 }
