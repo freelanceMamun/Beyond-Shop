@@ -38,21 +38,62 @@
       <div class="header-container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
+            <!-- ============= -->
+
+            <!-- ====== Mobile and Teb Selected Language ======= -->
+            <div class="Selected-respons">
+              <div class="select-menu">
+                <div class="select">
+                  <span>
+                    <img
+                      src="img/Ellipse-2.svg"
+                      style="width: 20px; padding-right: 2px"
+                      alt=""
+                    />
+                    EN
+                  </span>
+                </div>
+                <div class="options-list">
+                  <div class="option">
+                    <img
+                      src="img/Flag_of_Canada_(leaf).svg.png"
+                      style="width: 20px"
+                      alt=""
+                    />
+                    <span>CN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====== Mobile and Teb Selected Language ======= -->
             <a class="navbar-brand" href="#">
               <img src="img/brand-logo.png" alt="Brand Logo" />
             </a>
+
+            <!-- ===== Mobile and Teb Notification   ===== -->
+
+            <div class="Notification-inner">
+              <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="bel-icon">
+                  <img src="img/bel.svg" alt="" />
+                </a>
+                <a href="#" class="wishlistlist">
+                  <img src="img/icon-heart.svg" alt="" />
+                </a>
+              </div>
+            </div>
 
             <!-- =========   Mobile version  ======== -->
             <div class="align-items-center gap-4 sm-mob-navbar">
               <div class="beyond-system d-flex gap-4 ms-3 align-items-center">
                 <div class="user">
                   <a href="#">
-                    <img src="img/icon-heart.svg" alt="" />
+                    <img src="img/icon-user-lg.svg" alt="" />
                   </a>
                 </div>
                 <div class="shop-cart">
                   <a href="#">
-                    <img src="img/Frame 1.svg" alt="" />
+                    <img src="img/iconShop.svg" alt="" />
                     <span class="count">0</span>
                   </a>
                 </div>
@@ -126,6 +167,20 @@
           </div>
         </nav>
       </div>
+      <div class="search-response">
+        <form class="d-flex" role="search">
+          <div class="search-input d-flex align-items-center gap-2">
+            <img src="img/search.svg" alt="" class="" />
+            <input
+              class=""
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+      </div>
+
       <!-- ======  Categories  =====  -->
       <div class="categories-inner">
         <div class="categories-content header-container pt-4 pb-4">
@@ -134,7 +189,7 @@
             <div class="categories-list">
               <ul>
                 <li>
-                  <a href="#">Best Sellers</a>
+                  <a href="#" class="active">Best Sellers</a>
                 </li>
                 <li>
                   <a href="#">New Collections</a>
@@ -167,6 +222,54 @@
           تخفيضات اكثر من 70% على كل منتجات النساء و الاطفال!!
         </h2>
       </div>
+      <!-- ===== Mobile Bootom Menu === -->
+
+      <nav class="Mobile_nav">
+        <div class="nav-box">
+          <ul class="nav-container">
+            <li class="nav__item">
+              <a href="#Home" class="nav__item-link">
+                <div class="nav__item-icon">
+                  <img src="img/home-Regular.svg" alt="" />
+                </div>
+                <span class="nav__item-text">Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#Profile" class="nav__item-link">
+                <div class="nav__item-icon">
+                  <img src="img/store.svg" alt="" />
+                </div>
+                <span class="nav__item-text">Category</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#Messages" class="nav__item-link">
+                <div class="nav__item-icon">
+                  <img src="img/Frame12.svg" alt="" />
+                </div>
+                <span class="nav__item-text">New</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#Help" class="nav__item-link">
+                <div class="nav__item-icon">
+                  <img src="img/iconShop.svg" alt="" />
+                </div>
+                <span class="nav__item-text">Cart</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#Settings" class="nav__item-link">
+                <div class="nav__item-icon">
+                  <img src="img/icon-user-lg.svg" alt="" />
+                </div>
+                <span class="nav__item-text">Account</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- =====  Header ENd ===== -->
@@ -235,7 +338,7 @@
             <a href="#">See All</a>
           </div>
           <div class="row pt-4">
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -247,7 +350,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -259,7 +362,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -271,7 +374,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -283,7 +386,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -295,7 +398,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-lg-2 col-md-4 col-3">
               <a href="#" class="box-inner-categories">
                 <div class="Categories-card-inner">
                   <div class="image-box">
@@ -373,7 +476,7 @@
             <a href="#">See All</a>
           </div>
           <div class="row pt-4 pb-4">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -381,11 +484,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -431,7 +534,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -439,11 +542,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -489,7 +592,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -497,11 +600,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -558,7 +661,7 @@
         <div class="container-cum">
           <div class="banner-area-full">
             <a href="#">
-              <img src="img/Rectangle 160 (1).png" alt="banner-content" />
+              <img src="img/banner-lg-9.png" alt="banner-content" />
             </a>
           </div>
         </div>
@@ -614,21 +717,21 @@
       <section class="">
         <div class="container-cum pt-4 pb-4">
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="sale-branner">
                   <img src="img/banner-lg-1.png" alt="" />
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="sale-branner">
                   <img src="img/banner-lg-2.png" alt="" />
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="sale-branner">
                   <img src="img/banner-lg-3.png" alt="" />
@@ -647,7 +750,7 @@
             <a href="#">See All</a>
           </div>
           <div class="row pt-4 pb-4">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -655,11 +758,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -705,7 +808,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -713,11 +816,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -763,7 +866,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -771,11 +874,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -927,7 +1030,7 @@
             <a href="#">See All</a>
           </div>
           <div class="row pt-4 pb-4">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -935,12 +1038,12 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
 
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -986,7 +1089,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -994,11 +1097,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -1044,7 +1147,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-6">
               <div class="product_card">
                 <div class="product-content">
                   <div class="product_image">
@@ -1052,11 +1155,11 @@
                   </div>
                   <div class="product-wishlist">
                     <a href="#" class="save-wisthlist">
-                      <img src="img/Frame 14.svg" class="unlike" alt="" />
+                      <img src="img/icon-heart.svg" class="unlike" alt="" />
                       <img src="img/like.png" class="like" alt="" />
                     </a>
                     <a href="#">
-                      <img src="img/Frame 1.svg" alt="" />
+                      <img src="img/iconShop.svg" alt="" />
                     </a>
                   </div>
                   <div class="product-offer">
@@ -1128,7 +1231,7 @@
           </div>
 
           <div class="row pt-4">
-            <div class="col-lg-4 col-md-4 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="shop_box-content">
                   <img src="img/Rectangle-sm1.png" alt="" />
@@ -1138,7 +1241,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="shop_box-content">
                   <img
@@ -1152,7 +1255,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-6 ps-2 pe-2">
+            <div class="col-lg-4 col-md-4 col-4 ps-2 pe-2">
               <a href="#">
                 <div class="shop_box-content">
                   <img src="img/Rectangle-sm-3.png" alt="" />
@@ -1182,7 +1285,7 @@
       <section class="lust-banner-end">
         <div class="container-cum pt-4 pb-4">
           <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-6">
               <div class="bannner_box bg-overlay-left">
                 <img src="img/banner-lg.png" alt="" />
                 <div class="banner-by-title">
@@ -1191,7 +1294,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-6">
               <div class="bannner_box bg-overlay-right">
                 <img src="img/banner-lg-sm.png" alt="" />
                 <div class="banner-by-title">

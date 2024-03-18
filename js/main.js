@@ -54,7 +54,7 @@
 
     $('.owl-carousel').owlCarousel({
       loop: true,
-      margin: 0,
+      margin: 30,
       items: 1,
       autoplay: true,
       autoplayTimeout: 4000,
@@ -113,13 +113,13 @@ select.addEventListener('click', () => {
 });
 
 const element = `<span>
-<img src="img/Ellipse-2.svg" style="width: 25px" alt="">
+<img src="img/Ellipse-2.svg" style="width: 20px" alt="">
 EN
 </span>`;
 
 const element2 = `
 <div class="option">
-                      <img src="img/Flag_of_Canada_(leaf).svg.png" style="width: 25px" alt="">
+                      <img src="img/Flag_of_Canada_(leaf).svg.png" style="width: 20px ; padding-right: 2px" alt="">
                       <span>CN</span>
                     </div>`;
 
@@ -160,3 +160,43 @@ wishlistButton.forEach((button) => {
     }
   });
 });
+
+// -============= Active Category
+
+// const CategoryList = document.querySelectorAll('.categories-list  ul li a');
+
+// CategoryList.forEach((button)=>{
+//   button.addEventListener('click',(e)=>)
+// })
+
+const dropdownItems = document.querySelectorAll('.categories-list  ul li a');
+
+dropdownItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    const showDropdown = document.querySelector('.active');
+
+    toggleItem(item);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== item) {
+      toggleItem(showDropdown);
+    }
+  });
+});
+
+const toggleItem = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active')) {
+    item.classList.remove('active');
+  } else {
+    item.classList.add('active');
+  }
+};
+
+// const list = document.querySelectorAll('.nav__item');
+// list.forEach((item) => {
+//   item.addEventListener('click', () => {
+//     list.forEach((item) => item.classList.remove('active'));
+//     item.classList.add('active');
+//   });
+// });
