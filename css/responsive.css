@@ -1243,10 +1243,10 @@
 
   /* ==== Product Card  ===== */
   .product-discription .title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .product_card .short-disription {
-    font-size: 13px;
+    font-size: 12px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1; /* number of lines to show */
@@ -1302,6 +1302,10 @@
   }
   .Featured_Products .row {
     --bs-gutter-x: 4px;
+  }
+
+  .catagory-title h3 {
+    font-size: 18px;
   }
 
   /* ============== Out Top Category */
