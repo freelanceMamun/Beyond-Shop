@@ -962,6 +962,10 @@ footer {
   color: #000;
 }
 
+.Infinity {
+  display: none;
+}
+
 /* == Text scroll ==== */
 
 @keyframes infiniteScroll {
