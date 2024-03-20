@@ -537,6 +537,41 @@ input[type='checkbox'] {
   display: none;
 }
 
+.shop_search {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  top: 30px;
+  border-radius: 3px;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+  left: 10px;
+  width: 300px;
+  margin: auto;
+  display: block;
+  top: 55px;
+}
+.shop_search .search-input {
+  width: 100%;
+  height: 50px;
+}
+.shop_search .search-input img {
+  width: 20px;
+}
+
+.shop_search.active-search-shop {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: visible;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
     display: none;
@@ -610,6 +645,26 @@ input[type='checkbox'] {
     text-transform: uppercase;
     font-size: 17px;
     width: 400px;
+  }
+
+  .shop_search {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: 30px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 30px;
+    width: 90%;
+    margin: auto;
+    display: block;
+    top: 55px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -797,6 +852,27 @@ input[type='checkbox'] {
     gap: 7px;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .shop_search {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: 30px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 30px;
+    width: 90%;
+    margin: auto;
+    display: block;
+    top: 55px;
+  }
+
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
@@ -1024,6 +1100,27 @@ input[type='checkbox'] {
     gap: 5px;
     grid-template-columns: 1fr 1fr;
   }
+  .shop_search {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: 30px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 20px;
+    width: 90%;
+    margin: auto;
+    display: block;
+    top: 55px;
+  }
+
+
 }
 
 /*  */

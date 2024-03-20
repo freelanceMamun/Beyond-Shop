@@ -276,7 +276,7 @@ body {
 
 .beyond-system a {
   display: inline-block;
-  height: 40px;
+  color: #000;
 }
 
 .beyond-system a span {
@@ -770,33 +770,49 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
+.select a {
+  color: #000;
+}
 .options-list {
+  border-radius: 20px !important;
   position: absolute;
   width: 100%;
   background-color: #f4f4f4;
   border-radius: 6px;
-  margin-top: 10px;
-  padding: 4px 4px;
-  max-height: 180px;
-  overflow-y: auto;
-  -webkit-transition: 0.1s linear 0.1s;
-  -o-transition: 0.1s linear 0.1s;
-  transition: 0.1s linear 0.1s;
-  height: 0;
-  left: 6px;
-  opacity: 0;
+  padding: 7px 15px;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
   z-index: 1;
   box-shadow: 0px 0px 10px #f4f4f4;
+  top: 39px;
+  left: 0 !important;
+}
+.select.active-language {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.select.active-language .options-list {
+  border-top-left-radius: 1px !important;
+  border-top-right-radius: 1px !important;
 }
 
 .option {
-  padding: 8px 0;
   font-weight: 500;
   font-size: 14px;
   -webkit-transition: 0.1s ease-in-out;
   -o-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
+}
+
+.select.active-language .options-list {
+  transform: scale(1, 1);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: visible;
 }
 
 .option span {
@@ -815,8 +831,11 @@ footer {
 }
 
 .options-list.active {
-  height: max-content;
-  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: visible;
 }
 
 .unlike {
@@ -941,4 +960,34 @@ footer {
   transition: transform 250ms ease-in-out;
   font-size: 12px;
   color: #000;
+}
+
+/* == Text scroll ==== */
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.Infinity {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgba(241, 241, 241, 1);
+}
+.horizontal-scrolling-items {
+  background-color: rgba(241, 241, 241, 1);
+  display: flex;
+  font-size: 40px;
+  width: 450px;
+  gap: 10px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
 }

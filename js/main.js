@@ -103,46 +103,52 @@
 
 // =======  Carousel Slider
 
-const select = document.querySelector('.select');
+const select = document.querySelectorAll('.select');
 const options_list = document.querySelector('.options-list');
 const options = document.querySelectorAll('.option');
 
 //show & hide options list
-select.addEventListener('click', () => {
-  options_list.classList.toggle('active');
-});
+select.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
 
-const element = `<span>
-<img src="img/Ellipse-2.svg" style="width: 20px" alt="">
-EN
-</span>`;
+    const list = button.querySelector('.options-list .option img');
 
-const element2 = `
-<div class="option">
-                      <img src="img/Flag_of_Canada_(leaf).svg.png" style="width: 20px ; padding-right: 2px" alt="">
-                      <span>CN</span>
-                    </div>`;
+    const seleced = document.querySelector('.active-language');
+    toggleLangu(button);
 
-//select option
-options.forEach((option) => {
-  option.addEventListener('click', () => {
-    options.forEach((option) => {
-      option.classList.remove('selected');
-    });
-
-    select.querySelector('span').innerHTML = option.innerHTML;
-
-    if (!options_list.classList.contains('active')) {
-      options_list.classList.add('active');
-      option.innerHTML = element2;
-    } else {
-      options_list.classList.remove('active');
-      option.innerHTML = element;
+    languageCutton(button);
+    // Remove the show-dropdown class from other items
+    if (seleced && seleced !== button) {
+      toggleItem(seleced);
     }
-
-    option.classList.add('selected');
   });
 });
+
+const toggleLangu = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active-language')) {
+    item.classList.remove('active-language');
+  } else {
+    item.classList.add('active-language');
+  }
+};
+
+options.forEach((element) => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
+    const img = element.querySelector('img').attributes;
+    const text = element.querySelector('span').innerText;
+    const parentNode = element.parentNode.parentElement.querySelector('a');
+
+    const prevdata = element.innerHTML;
+    element.innerHTML = parentNode.innerHTML;
+    parentNode.innerHTML = prevdata;
+  });
+});
+
+let languageCutton = (button) => {};
 
 // ===== Wishlist Action Toggle
 
@@ -241,96 +247,3 @@ rangeInput.forEach((input) => {
     }
   });
 });
-
-// =========  Shop Filter
-const filerCurrentElement = document.querySelector('.Recommended');
-const shotFilerITem = document.querySelectorAll('.sortFilter li');
-const dropdown = document.querySelector('.select-dropdown');
-filerCurrentElement.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  if (!dropdown.classList.contains('toggle')) {
-    dropdown.classList.add('toggle');
-  } else {
-    dropdown.classList.remove('toggle');
-  }
-});
-
-shotFilerITem.forEach((button) => {
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    const slectedElement = e.target.innerHTML;
-    filerCurrentElement.querySelector('span').innerHTML = slectedElement;
-    dropdown.classList.remove('toggle');
-  });
-});
-
-// ===== Shop Filter Toggle
-
-const shopFilterButton = document.querySelectorAll('.shopFilterButton');
-const dropdownSMmain = document.querySelector('.dropdown-sm-main');
-const dropSortMain = document.querySelector('.dropdown-sort-main');
-
-dropdownSMmain.addEventListener('click', (e) => {
-  e.preventDefault();
-  dropdownSMmain.classList.toggle('toggle-active');
-  dropSortMain.classList.remove('toggle-active');
-});
-
-dropSortMain.addEventListener('click', (e) => {
-  e.preventDefault();
-  dropSortMain.classList.toggle('toggle-active');
-  dropdownSMmain.classList.remove('toggle-active');
-});
-
-shopFilterButton.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    e.preventDefault();
-    const showDropdown = document.querySelector('.active-btn');
-
-    shopFilterFun(item);
-    // Remove the show-dropdown class from other items
-    if (showDropdown && showDropdown !== item) {
-      shopFilterFun(showDropdown);
-    }
-  });
-});
-
-const shopFilterFun = (item) => {
-  // 3.1. Select each dropdown content
-
-  if (item.classList.contains('active-btn')) {
-    item.classList.remove('active-btn');
-    dropdownSMmain.classList.remove('toggle-active');
-    dropSortMain.classList.remove('toggle-active');
-  } else {
-    item.classList.add('active-btn');
-  }
-};
-
-// ======= more Filter
-
-const filterdropdown = document.querySelectorAll('.filterdropdown');
-
-filterdropdown.forEach((button) => {
-  button.querySelector('a').addEventListener('click', (e) => {
-    e.preventDefault();
-    const showDropdown = document.querySelector('.active-btn');
-
-    moreFilterFun(button);
-    // Remove the show-dropdown class from other items
-    if (showDropdown && showDropdown !== button) {
-      moreFilterFun(showDropdown);
-    }
-  });
-});
-
-const moreFilterFun = (item) => {
-  // 3.1. Select each dropdown content
-
-  if (item.classList.contains('active-btn')) {
-    item.classList.remove('active-btn');
-  } else {
-    item.classList.add('active-btn');
-  }
-};
