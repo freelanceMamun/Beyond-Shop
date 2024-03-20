@@ -148,8 +148,6 @@ options.forEach((option) => {
 
 const wishlistButton = document.querySelectorAll('.save-wisthlist');
 
-console.log(wishlistButton);
-
 wishlistButton.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -266,3 +264,73 @@ shotFilerITem.forEach((button) => {
     dropdown.classList.remove('toggle');
   });
 });
+
+// ===== Shop Filter Toggle
+
+const shopFilterButton = document.querySelectorAll('.shopFilterButton');
+const dropdownSMmain = document.querySelector('.dropdown-sm-main');
+const dropSortMain = document.querySelector('.dropdown-sort-main');
+
+dropdownSMmain.addEventListener('click', (e) => {
+  e.preventDefault();
+  dropdownSMmain.classList.toggle('toggle-active');
+  dropSortMain.classList.remove('toggle-active');
+});
+
+dropSortMain.addEventListener('click', (e) => {
+  e.preventDefault();
+  dropSortMain.classList.toggle('toggle-active');
+  dropdownSMmain.classList.remove('toggle-active');
+});
+
+shopFilterButton.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active-btn');
+
+    shopFilterFun(item);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== item) {
+      shopFilterFun(showDropdown);
+    }
+  });
+});
+
+const shopFilterFun = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active-btn')) {
+    item.classList.remove('active-btn');
+    dropdownSMmain.classList.remove('toggle-active');
+    dropSortMain.classList.remove('toggle-active');
+  } else {
+    item.classList.add('active-btn');
+  }
+};
+
+// ======= more Filter
+
+const filterdropdown = document.querySelectorAll('.filterdropdown');
+
+filterdropdown.forEach((button) => {
+  button.querySelector('a').addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active-btn');
+
+    moreFilterFun(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      moreFilterFun(showDropdown);
+    }
+  });
+});
+
+const moreFilterFun = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active-btn')) {
+    item.classList.remove('active-btn');
+  } else {
+    item.classList.add('active-btn');
+  }
+};
