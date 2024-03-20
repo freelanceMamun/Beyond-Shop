@@ -995,3 +995,100 @@ footer {
 .horizontal-scrolling-items__item {
   white-space: nowrap;
 }
+
+/* ==== Category  pages ==== */
+
+.banner-thum {
+  background: rgba(242, 242, 242, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 15px;
+}
+.banner-thum h3 {
+  font-size: 20px;
+}
+.explore-more .title-top {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.explore-more .title-top h2 {
+  font-size: 20px;
+}
+
+.cate-groy-box-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 1rem;
+}
+
+.box-category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.category .box-item {
+  position: relative;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+}
+
+.category .box-item img {
+  width: 100%;
+  height: 100%;
+}
+.category .box-item h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* =====  branding banner Category   ======= */
+
+.category-branding-container {
+  margin-top: 1rem;
+}
+
+.branding-banner {
+}
+.branding-banner .new {
+  background: rgba(255, 184, 0, 0.8);
+  border-radius: 5px;
+  padding: 10px 10px 25px 10px;
+}
+.branding-banner .freeshipping {
+  background: rgba(151, 71, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px 10px 25px 10px;
+}
+
+.branding-banner .freeshipping h3 {
+  font-size: 15px;
+  color: #fff;
+  margin: 4px 0;
+}
+
+.branding-banner .freeshipping h6 {
+  font-size: 11px;
+  color: #fff;
+}
+
+.branding-banner .new h3 {
+  font-size: 15px;
+  color: #fff;
+  margin: 4px 0;
+}
+
+.branding-banner .new h6 {
+  font-size: 11px;
+  color: #fff;
+}
