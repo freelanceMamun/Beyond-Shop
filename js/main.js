@@ -243,3 +243,26 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+// =========  Shop Filter
+const filerCurrentElement = document.querySelector('.Recommended');
+const shotFilerITem = document.querySelectorAll('.sortFilter li');
+const dropdown = document.querySelector('.select-dropdown');
+filerCurrentElement.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (!dropdown.classList.contains('toggle')) {
+    dropdown.classList.add('toggle');
+  } else {
+    dropdown.classList.remove('toggle');
+  }
+});
+
+shotFilerITem.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const slectedElement = e.target.innerHTML;
+    filerCurrentElement.querySelector('span').innerHTML = slectedElement;
+    dropdown.classList.remove('toggle');
+  });
+});

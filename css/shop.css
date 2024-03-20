@@ -94,11 +94,14 @@
 .list ul {
   margin-left: 15px;
 }
+.list ul li {
+  margin: 5px 0;
+}
 .list ul li a {
   color: #000;
   font-size: 18px;
   margin: 7px 0;
-  display: block;
+
   font-weight: 500;
 }
 .list ul li a:hover {
@@ -212,7 +215,112 @@ input[type='range']::-moz-range-thumb {
   width: 500px;
 }
 
-/* media screen  */
+/* ======   Filter  ====== */
+.filter-check .check-box {
+  margin: 5px 0;
+}
+.filter-check .check-box label {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  accent-color: #9600c1;
+}
+
+.color-box {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.color-box a {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  color: #000000;
+  font-size: 17px;
+}
+.color-box a span {
+  height: 20px;
+  width: 20px;
+  display: block;
+  border-radius: 3px;
+}
+
+.size-box {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.size-box a {
+  color: #000000;
+  font-size: 17px;
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  padding: 4px;
+}
+
+.Gender ul li a {
+  font-size: 18px;
+  margin: 7px 0;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* ===== Filter Dropdown */
+.shop-serv {
+  position: relative;
+}
+.select-dropdown {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #e2e2e2;
+  top: 60px;
+  padding: 10px;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+  border-radius: 4px;
+}
+
+.select-dropdown.toggle {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.select-dropdown ul li {
+  font-size: 16px;
+  color: #000;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* ====== Shop header  ===== */
+
+.shop-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.shop-header-container .search-btn img {
+  width: 25px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .shop-content {
@@ -341,5 +449,25 @@ input[type='range']::-moz-range-thumb {
 
   .filter-category {
     margin-right: 30px;
+  }
+
+  /* ===== Header ====== */
+
+  .shop-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .prev-control {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .wishlist a img {
+    width: 25px;
   }
 }

@@ -21,7 +21,7 @@
   <body>
     <!-- Header area -->
     <!-- Header area -->
-    <header class="main-header-area">
+    <header class="main-header-area d-none">
       <div class="header-container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
@@ -260,6 +260,52 @@
     </header>
 
     <!-- =====  Header ENd ===== -->
+
+    <!-- ======  Responsive Header   ========= -->
+    <header class="shop-header">
+      <div class="container-cum">
+        <div class="shop-header-container">
+          <div class="prev-control">
+            <a href="#">
+              <img src="img/chevron-left.svg" alt="" />
+            </a>
+            <a href="#" class="search-btn">
+              <img src="img/search.svg" alt="" />
+            </a>
+          </div>
+          <div class="catagory-title">
+            <h3>Dresses</h3>
+          </div>
+          <div class="wishlist">
+            <a href="#">
+              <img src="img/icon-heart.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- ===== Filter option  ====== -->
+        <div class="shop-filter-option">
+          <div class="short-filter"></div>
+          <div class="popular"></div>
+          <div class="sort-filter">
+            <a href="#">
+              <span>Sort by</span>
+              <img src="img/sort-ascending.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-filter">
+            <a href="#">
+              <span>Filter</span>
+              <img src="img/filter.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- ====   ===== -->
+      </div>
+    </header>
+
+    <!-- ===  Responsive Header ==== -->
+
     <!-- =====  Header ENd ===== -->
 
     <!-- == Shop main  ==== -->
@@ -302,21 +348,27 @@
                           <div class="list">
                             <ul>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Best Sellers</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">New Collections</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Women Clothings </a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Men Fashion</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Kids</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#"> Shoes</a>
                               </li>
                             </ul>
@@ -343,11 +395,30 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the
-                          second item's accordion body. Let's imagine this being
-                          filled with some actual content.
+                          <div class="filter-check ps-2">
+                            <form action="">
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> All</label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> Ease </label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> Nike </label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> puma </label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> Fila </label>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -370,14 +441,54 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the third
-                          item's accordion body. Nothing more exciting happening
-                          here in terms of content, but just filling up the
-                          space to make it look, at least at first glance, a bit
-                          more representative of how this would look in a
-                          real-world application.
+                          <div class="color-filter">
+                            <form action="" class="pt-2 ps-2">
+                              <div class="color-box">
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: #ff0000"
+                                  ></span>
+                                  Red
+                                </a>
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: #00ff00"
+                                  ></span>
+                                  Green
+                                </a>
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: #0000ff"
+                                  ></span>
+                                  Blue
+                                </a>
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: #ffff00"
+                                  ></span>
+                                  Yellow
+                                </a>
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: Orange"
+                                  ></span>
+                                  Yellow
+                                </a>
+                                <a href="#">
+                                  <span
+                                    class="sm-box"
+                                    style="background: #800080"
+                                  ></span>
+                                  Purple
+                                </a>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -400,14 +511,9 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the third
-                          item's accordion body. Nothing more exciting happening
-                          here in terms of content, but just filling up the
-                          space to make it look, at least at first glance, a bit
-                          more representative of how this would look in a
-                          real-world application.
+                          <div class="wrapper">
+                            <p>Use slider or enter min and max Age</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -429,16 +535,7 @@
                         class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the third
-                          item's accordion body. Nothing more exciting happening
-                          here in terms of content, but just filling up the
-                          space to make it look, at least at first glance, a bit
-                          more representative of how this would look in a
-                          real-world application.
-                        </div>
+                        <div class="accordion-body"></div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -460,14 +557,22 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the third
-                          item's accordion body. Nothing more exciting happening
-                          here in terms of content, but just filling up the
-                          space to make it look, at least at first glance, a bit
-                          more representative of how this would look in a
-                          real-world application.
+                          <div class="filter-check ps-2">
+                            <form action="">
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> In Stock</label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> Stock Out </label>
+                              </div>
+                              <div class="check-box">
+                                <input type="checkbox" />
+                                <label for=""> Upcomming </label>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -490,14 +595,20 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          Placeholder content for this accordion, which is
-                          intended to demonstrate the
-                          <code>.accordion-flush</code> class. This is the third
-                          item's accordion body. Nothing more exciting happening
-                          here in terms of content, but just filling up the
-                          space to make it look, at least at first glance, a bit
-                          more representative of how this would look in a
-                          real-world application.
+                          <div class="size-filter">
+                            <form action="" class="pt-2 ps-2">
+                              <div class="size-box">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#"> S </a>
+                                <a href="#"> M </a>
+                                <a href="#"> L </a>
+                                <a href="#"> XL </a>
+                                <a href="#"> XXL </a>
+                                <a href="#"> XXXL </a>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -586,15 +697,18 @@
                         data-bs-parent="#accordionFlushExample"
                       >
                         <div class="accordion-body">
-                          <div class="list">
+                          <div class="Gender ps-2">
                             <ul>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Man</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Womans</a>
                               </li>
                               <li>
+                                <input type="checkbox" />
                                 <a href="#">Kids</a>
                               </li>
                             </ul>
@@ -604,6 +718,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- =======  Mobile Response Filter  ========= -->
               </div>
               <div class="col-lg-9">
                 <div class="shop-right-container">
@@ -632,6 +747,15 @@
                           <img src="img/sliders-h.svg" alt="" />
                           <span>Recommended ranking</span>
                         </a>
+                        <div class="select-dropdown">
+                          <ul class="sortFilter">
+                            <li>Out Picks</li>
+                            <li>Letest</li>
+                            <li>Highest Desicount</li>
+                            <li>Price (Low First)</li>
+                            <li>Price (High First)</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
