@@ -585,6 +585,9 @@ input[type='checkbox'] {
   .header-response {
     display: none;
   }
+  .shop_header_main {
+    display: none;
+  }
 
   .shop-header {
     display: block;
@@ -678,7 +681,9 @@ input[type='checkbox'] {
     display: block;
     padding: 0 20px;
   }
-
+  .shop_header_main {
+    display: none;
+  }
   .shop-left-container {
     display: none;
   }
@@ -699,6 +704,9 @@ input[type='checkbox'] {
   .shop-header {
     display: block;
     padding: 0 15px;
+  }
+  .shop_header_main {
+    display: none;
   }
 
   .shop-left-container {
@@ -873,7 +881,7 @@ input[type='checkbox'] {
     width: 90%;
     margin: auto;
     display: block;
-    top: 55px;
+    top: 100px;
   }
 }
 
@@ -887,6 +895,10 @@ input[type='checkbox'] {
   .shop-header {
     display: block;
     padding: 0 0px;
+  }
+
+  .shop_header_main {
+    display: none;
   }
 
   .shop_container .loadMorebutton a {

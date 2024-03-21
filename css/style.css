@@ -987,7 +987,19 @@ footer {
 }
 /* == Text scroll ==== */
 
-@keyframes infiniteScroll {
+.marquee {
+  width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+}
+
+.Infinity {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgba(241, 241, 241, 1);
+  padding: 10px 0;
+}
+
+/* @keyframes infiniteScroll {
   from {
     transform: translateX(0);
   }
@@ -1000,6 +1012,9 @@ footer {
   overflow-x: hidden;
   background-color: rgba(241, 241, 241, 1);
 }
+
+
+
 .horizontal-scrolling-items {
   background-color: rgba(241, 241, 241, 1);
   display: flex;
@@ -1013,7 +1028,7 @@ footer {
 }
 .horizontal-scrolling-items__item {
   white-space: nowrap;
-}
+} */
 
 /* ==== Category  pages ==== */
 
@@ -1077,8 +1092,6 @@ footer {
   margin-top: 1rem;
 }
 
-.branding-banner {
-}
 .branding-banner .new {
   background: rgba(255, 184, 0, 0.8);
   border-radius: 5px;

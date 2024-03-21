@@ -1186,18 +1186,7 @@
     margin-bottom: 140px;
   }
 
-  .horizontal-scrolling-items {
-    background-color: rgba(241, 241, 241, 1);
-    display: flex;
-    font-size: 40px;
-    width: 450px;
-    gap: 10px;
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    margin: auto;
-  }
+  
 
   .brand-section-h {
     display: none;
@@ -1533,7 +1522,7 @@
   .Infinity {
     display: block;
   }
-
+/* 
   .horizontal-scrolling-items {
     background-color: rgba(241, 241, 241, 1);
     display: flex;
@@ -1545,7 +1534,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     margin: auto;
-  }
+  } */
+
   .owl-carousel .owl-item img {
     height: 200px;
     object-fit: cover;
