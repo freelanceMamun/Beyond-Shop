@@ -8,6 +8,10 @@
   display: none;
 }
 
+.sm_banner {
+  display: none;
+}
+
 @media (min-width: 1600px) {
   .container-cum {
     max-width: 1560px;
@@ -394,6 +398,56 @@
     padding-right: 8px;
   }
 
+  .owl-nav button {
+    background: transparent;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .collection-inner {
+    display: none;
+  }
+
+  .Trending_Styles {
+    padding-bottom: 0 !important;
+  }
+  .shop_brand_box::before {
+    content: '';
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 0%,
+      #390049cb 100%
+    );
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .our_collection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .search-input {
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    width: 310px;
+    padding: 8px 11px;
+    height: 50px;
+  }
+
+  .Categoires-top .container-cum {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .Categoires-top .title-top {
+    display: none !important;
+  }
+
   .hero_area {
     margin-top: 0 !important;
   }
@@ -685,9 +739,77 @@
     animation-timing-function: linear;
     margin: auto;
   }
+
+  .brand-section-h {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
+  .sm_banner {
+    display: block;
+  }
+
+  .Banner-w .container-cum {
+    padding-top: 5px !important;
+  }
+  .our_collection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .collection-inner {
+    display: none;
+  }
+
+  .Trending_Styles .row {
+    --bs-gutter-x: 4px;
+    padding-bottom: 5px !important;
+  }
+
+  .Trending_Styles {
+    padding-bottom: 0px !important;
+    padding-top: 10px !important;
+  }
+
+  .title-top a {
+    display: none;
+  }
+
+  .banner-full-lg {
+    display: none;
+  }
+
+  .shop_brand_box::before {
+    content: '';
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 0%,
+      #390049cb 100%
+    );
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .Categoires-top .container-cum {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .Categoires-top .title-top {
+    display: none !important;
+  }
+
+  .Categoires-top .row {
+    padding-top: 10px !important;
+  }
+
+  .Featured_Products {
+    padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   .container-cum {
     max-width: 100%;
     margin: auto;
@@ -894,8 +1016,17 @@
   }
   /* ===== Shop By */
   .shop_by {
-    padding-bottom: 20px;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
   }
+
+  .shop_by .row {
+    padding-top: 0 !important;
+  }
+  .lust-banner-end .container-cum {
+    padding-top: 0 !important;
+  }
+
   .shop_brandrow {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 7px;
@@ -1067,9 +1198,31 @@
     animation-timing-function: linear;
     margin: auto;
   }
+
+  .brand-section-h {
+    display: none;
+  }
+  .owl-nav button {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    background: transparent;
+    color: #fff;
+    font-size: 8px;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 640px) {
+  .sm_banner {
+    display: block;
+  }
+
+  .Categoires-top .container-cum {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .navbar-brand {
     max-width: 42%;
     margin-right: 0;
@@ -1103,13 +1256,16 @@
     width: 30px;
   }
   .owl-nav button {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-left: 15px !important;
     margin-right: 15px !important;
+    background: transparent;
+    color: #fff;
+    font-size: 8px;
   }
   .owl-nav button span {
-    font-size: 15px !important;
+    font-size: 8px !important;
   }
 
   .sm-mob-navbar {
@@ -1299,9 +1455,23 @@
 
   .Featured_Products {
     padding-bottom: 0 !important;
+    padding-top: 15px !important;
+  }
+
+  .sale-brand .container-cum {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .Banner-w .container-cum {
+    padding-top: 5px !important;
+  }
+
+  .Featured_Products .row {
+    --bs-gutter-x: 4px;
   }
   .Featured_Products .row {
     --bs-gutter-x: 4px;
+    padding-bottom: 0 !important;
   }
 
   .catagory-title h3 {
@@ -1336,6 +1506,7 @@
   }
   .search-response .search-input {
     width: 100%;
+    height: 47px;
   }
   .Mobile_nav {
     display: block;
@@ -1375,6 +1546,16 @@
     animation-timing-function: linear;
     margin: auto;
   }
+  .owl-carousel .owl-item img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .brand-section-h {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1384,6 +1565,15 @@
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
+  .sm_banner {
+    display: block;
+  }
+
+  .Categoires-top .container-cum {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .cate-groy-box-inner {
     padding: 0 5px;
   }
@@ -1398,5 +1588,8 @@
     width: 100px;
     height: 100px;
     margin: 5px auto;
+  }
+  .brand-section-h {
+    display: none;
   }
 }
