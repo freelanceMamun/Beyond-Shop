@@ -397,6 +397,9 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+  .banner-full-lg {
+    display: none;
+  }
 
   .owl-nav button {
     background: transparent;
