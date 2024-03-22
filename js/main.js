@@ -247,8 +247,9 @@ rangeInput.forEach((input) => {
     }
   });
 });
-const shopSearchButton = document.querySelector('.search-btn');
-shopSearchButton.addEventListener('click', (e) => {
-  e.preventDefault('');
-  document.querySelector('.shop_search').classList.toggle('active-search-shop');
-});
+
+// const shopSearchButton = document.querySelector('.search-btn');
+// shopSearchButton.addEventListener('click', (e) => {
+//   e.preventDefault('');
+//   document.querySelector('.shop_search').classList.toggle('active-search-shop');
+// });

@@ -739,6 +739,9 @@
   .sm_banner {
     display: block;
   }
+  .responsebanner {
+    display: block;
+  }
 
   .Banner-w .container-cum {
     padding-top: 5px !important;
@@ -1193,6 +1196,11 @@
 @media screen and (min-width: 100px) and (max-width: 640px) {
   .sm_banner {
     display: block;
+  }
+
+  .shop_brand .shop_brand_box img {
+    height: 243px;
+    object-fit: cover;
   }
 
   .Categoires-top .container-cum {

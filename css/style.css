@@ -1139,6 +1139,10 @@ footer {
   border-radius: 5px;
 }
 
+.responsebanner {
+  display: none;
+}
+
 @media screen and (min-width: 993px) and (max-width: 1140px) {
   .category .box-item {
     position: relative;
