@@ -677,6 +677,12 @@ input[type='checkbox'] {
   .header-response {
     display: none;
   }
+
+  .loadMorebutton {
+    justify-content: center;
+    margin-top: 0rem;
+    display: none;
+  }
   .shop-header {
     display: block;
     padding: 0 20px;
@@ -765,6 +771,7 @@ input[type='checkbox'] {
   .loadMorebutton {
     justify-content: center;
     margin-top: 0rem;
+    display: none;
   }
 
   .loadMorebutton a {
