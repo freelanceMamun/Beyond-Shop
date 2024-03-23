@@ -454,7 +454,7 @@
     border-radius: 14px;
     background: #9600c1;
     flex-shrink: 0;
-    width: 592px;
+    width: 470px;
     height: 80px;
     flex-shrink: 0;
     display: flex;
@@ -1235,5 +1235,494 @@
   .responsive-check-out {
     width: 272px;
     margin: auto;
+  }
+}
+
+/* ======== My Cart */
+
+.responsive-cart .card-content {
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+}
+.responsive-cart .card-content > div {
+  justify-content: space-between;
+  gap: 5px;
+}
+.responsive-cart .img-card {
+  width: 180px;
+  height: 160px;
+  object-fit: cover;
+}
+.responsive-cart .img-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.card-content h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.card-content h5 span {
+  font-weight: 400;
+}
+.responsive-cart .order-date {
+  gap: 10px !important;
+  margin-top: 0.3em;
+}
+.responsive-cart .order-date h4 {
+  font-size: 12px;
+}
+
+.card-content .price {
+  color: #9600c1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.responsive-cart .order-details-res {
+  background: #fafafa;
+}
+
+.cart-checkout {
+  position: fixed;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-count {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.coupon-container {
+  margin: 3rem 0;
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  background-size: cover;
+  padding-bottom: 15px;
+}
+.onselected a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.responsive-cart .order-details-res {
+  margin-bottom: 100px;
+}
+
+.responsive-cart .order-details-res .coupon {
+  color: #9600c1;
+}
+
+@media screen and (min-width: 1600px) {
+  .responsive-cart {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .responsive-cart {
+    display: none;
+  }
+
+  .order-content {
+    width: 470px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #fafafa;
+    margin-left: auto;
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .responsive-cart {
+    display: none;
+  }
+
+  .img-card {
+    width: 200.797px;
+    height: 220px;
+  }
+
+  .product-card-information .product-title h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0;
+  }
+
+  .price-tag {
+    color: #9600c1;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cart-page {
+    display: none;
+  }
+
+  .card-content {
+    margin: 0 25px;
+  }
+
+  .responsive-cart .img-card {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .responsive-cart .card-content > div {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .card-content h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .card-content h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .responsive-cart .img-card {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .responsive-cart .card-content {
+    border-radius: 10px;
+    background: #fafafa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .responsive-cart .card-content-dis {
+    padding-left: 15px;
+  }
+
+  .responsive-cart .order-date h4 {
+    font-size: 23px;
+  }
+
+  .card-content .price {
+    color: #9600c1;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .responsive-cart .order-date {
+    gap: 10px !important;
+    margin-top: 0.3em;
+    justify-content: space-between;
+  }
+
+  .responsive-cart .date {
+    flex: 1;
+  }
+
+  .coupon-container p {
+    font-size: 22px;
+  }
+
+  .onselected a {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .responsive-cart .order-details-res {
+    margin-bottom: 150px;
+  }
+  .responsive-cart .total-price-check h4 {
+    font-size: 28px;
+  }
+  .responsive-cart .price-dec p {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .responsive-cart .price-dec {
+    margin: 15px 0;
+  }
+
+  .responsive-cart .price-dec .coupon {
+    font-size: 24px;
+  }
+
+  .responsive-cart .total-price-check h3 {
+    color: #9600c1;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .CheckOutHeader-sm {
+    display: none;
+  }
+
+  .card-count {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 767px) {
+  .cart-page {
+    display: none;
+  }
+
+  .cart-page {
+    display: none;
+  }
+  .card-content {
+    margin: 0 14px;
+  }
+
+  .order-details-res {
+    margin: 4rem 0;
+  }
+
+  .responsive-cart .img-card {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .responsive-cart {
+    margin-top: 40px;
+  }
+
+  .responsive-cart .card-content > div {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .card-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .card-content {
+    margin-top: 20px;
+  }
+
+  .card-content h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .card-content h5 span {
+    font-size: 15px;
+  }
+
+  .responsive-cart .order-date h4 {
+    font-size: 14px;
+  }
+
+  .responsive-cart .order-date {
+    gap: 10px !important;
+    margin-top: 0.3em;
+    justify-content: space-between;
+  }
+  .responsive-cart .date {
+    flex: 1;
+  }
+
+  .card-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .total-price-check h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .responsive-cart .order-details-res .coupon {
+    color: #9600c1;
+  }
+  .responsive-cart .price-dec {
+    margin: 12px 0;
+  }
+  .card-content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .card-content h5 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .card-content h5 span {
+    font-size: 22px;
+
+    margin: 5px 0;
+  }
+
+  .responsive-cart .order-date h4 {
+    font-size: 23px;
+  }
+
+  .card-content .price {
+    color: #9600c1;
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .responsive-cart .img-card {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 640px) {
+  .cart-page {
+    display: none;
+  }
+  .card-content {
+    margin: 0 14px;
+  }
+
+  .order-details-res {
+    margin: 4rem 0;
+  }
+
+  .responsive-cart .img-card {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .responsive-cart {
+    margin-top: 40px;
+  }
+
+  .responsive-cart .card-content > div {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .card-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  .card-content {
+    margin-top: 20px;
+  }
+
+  .card-content h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .card-content h5 span {
+    font-size: 15px;
+  }
+
+  .responsive-cart .order-date h4 {
+    font-size: 14px;
+  }
+
+  .responsive-cart .order-date {
+    gap: 10px !important;
+    margin-top: 0.3em;
+    justify-content: space-between;
+  }
+  .responsive-cart .date {
+    flex: 1;
+  }
+
+  .card-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .total-price-check h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .responsive-cart .order-details-res .coupon {
+    color: #9600c1;
+  }
+  .responsive-cart .price-dec {
+    margin: 12px 0;
+  }
+}
+
+@media screen and (min-width: 326px) and (max-width: 425px) {
+  .cart-page {
+    display: none;
+  }
+  .responsive-cart .img-card {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .responsive-cart {
+    margin-top: 40px;
+  }
+
+  .card-content {
+    margin-top: 20px;
+  }
+  .responsive-cart .order-date {
+    gap: 10px !important;
+    margin-top: 0.3em;
+    justify-content: space-between;
+  }
+
+  .responsive-cart .date {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 325px) {
+  .cart-page {
+    display: none;
+  }
+
+  .responsive-cart {
+    margin-top: 40px;
+  }
+
+  .card-content {
+    margin-top: 20px;
   }
 }
