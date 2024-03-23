@@ -1,0 +1,111 @@
+.Order-Sum {
+  width: 700px;
+  margin: 3rem auto;
+}
+.Order-summary {
+  margin: auto;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+}
+.Order-summary .title {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 14px;
+}
+
+.Order-summary .payment-sy {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 14px;
+  padding-top: 10px;
+}
+
+.payment-sy p {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.payment-sy p span {
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #9600c1;
+}
+.price-dec {
+  margin: 10px 0;
+}
+
+.price-dec p {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price-dec p:nth-child(2) {
+  color: #9600c1;
+  font-weight: 600;
+}
+
+.total-price-check h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.order-button a {
+  margin: auto;
+  width: 700px;
+}
+
+.Order-summary .payment-sy h3 {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.orderSummary .title h3 {
+  margin: 5px 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.orderSummary .title h4 {
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 5px 0;
+}
+.orderSummary .title h5 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px 0;
+}
+
+.orderSummary .title p {
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 5px 0;
+}
