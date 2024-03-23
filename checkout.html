@@ -266,8 +266,23 @@
       </div>
     </div>
 
-    <main class="my-cart">
-      <div class="cart-container">
+    <header class="CheckOutHeader-sm">
+      <div class="pt-5">
+        <div class="shop-header-container">
+          <div class="prev-control">
+            <a href="#" class="prev-btn">
+              <img src="img/arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="catagory-title">
+            <h3 class="text-center">Checkout</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="my-cart overflow-hidden">
+      <div class="cart-container checkout-container">
         <div class="header-container">
           <div class="row">
             <div class="col-lg-7">
@@ -341,9 +356,46 @@
                         <img src="img/phone-Regular.svg" alt="" />
                         <input type="text" placeholder="Phone Number" />
                       </div>
-                      <div class="input-box col-12">
+                      <div class="input-box address col-12">
                         <img src="img/map-marker-Regular.svg" alt="" />
                         <input type="text" placeholder="Full Address" />
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- ==== Responsive Check out form ===== -->
+
+                  <div class="responsive-check-out">
+                    <form action="" class="row">
+                      <div class="input-box col-6">
+                        <input type="email" placeholder="Email" />
+                      </div>
+                      <div class="input-box col-6">
+                        <input type="text" placeholder="Full Names" />
+                      </div>
+                      <div class="input-box col-6">
+                        <input
+                          type="text"
+                          placeholder="Address / Street Name"
+                        />
+                      </div>
+                      <div class="input-box col-6">
+                        <select name="" id="">
+                          <option value="" selected>City</option>
+                        </select>
+                      </div>
+                      <div class="input-box col-12">
+                        <select name="" id="">
+                          <option value="" selected>Area</option>
+                        </select>
+                      </div>
+                      <div class="number-box col-12">
+                        <div class="number-code">
+                          <input type="text" placeholder="+966" />
+                        </div>
+                        <div class="number-input">
+                          <input type="text" placeholder="Phone Number" />
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -372,6 +424,33 @@
                 </div>
                 <div class="order-button mt-4">
                   <a href="#">Proceed to Checkout</a>
+                </div>
+              </div>
+
+              <!-- ===== Respnsive Order Details ====== -->
+              <div class="order-details-res">
+                <div
+                  class="d-flex price-dec align-items-center justify-content-between"
+                >
+                  <p>Sub-total</p>
+                  <p>SAR 40</p>
+                </div>
+                <div
+                  class="d-flex price-dec align-items-center justify-content-between"
+                >
+                  <p>Shipping</p>
+                  <p>FREE</p>
+                </div>
+                <div class="total-price-check">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h4>Total Amount:</h4>
+                    <div class="d-flex align-items-center gap-3">
+                      <h3>SAR 40</h3>
+                      <a href="#">Checkout</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
