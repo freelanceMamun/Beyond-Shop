@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Acccout</title>
+    <title>Check out Two</title>
 
     <!-- all css here -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/productdetails.css" />
     <link rel="stylesheet" href="css/mycart.css" />
     <link rel="stylesheet" href="css/checkoutTwo.css" />
+
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
@@ -241,6 +242,8 @@
       </nav>
     </header>
 
+    <!-- ====== bread Cam  ===== -->
+
     <div class="bread_cam">
       <div class="header-container">
         <div class="navigation-url">
@@ -254,12 +257,16 @@
             <li>
               <a href="#"> My Cart </a>
             </li>
+            <li>
+              <img src="img/arrow.svg" alt="" />
+            </li>
+            <li>
+              <a href="#"> Checkout</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <!-- ====== bread Cam  ===== -->
 
     <header class="CheckOutHeader-sm">
       <div class="pt-5">
@@ -270,76 +277,123 @@
             </a>
           </div>
           <div class="catagory-title">
-            <h3 class="text-center">My Shopping Cart</h3>
+            <h3 class="text-center">Checkout</h3>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="my-cart">
-      <div class="cart-container cart-page">
+    <main class="my-cart overflow-hidden checkoutTwo">
+      <div class="cart-container checkout-container">
         <div class="header-container">
           <div class="row">
             <div class="col-lg-7">
               <div class="My-cart-product">
                 <div class="title-container">
-                  <h2>
-                    My Cart
-                    <span>(1 Item)</span>
-                  </h2>
+                  <h2>Checkout</h2>
                   <p>
-                    Ready to Roll: Your Handpicked Selection Awaits in the
-                    Shopping Cart!
+                    A Checkout is a counter where you pay for things you are
+                    buying!
                   </p>
                 </div>
 
-                <div class="product-card">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="img-card">
-                      <img src="img/product-1.png" alt="" />
+                <!-- ===== Check out === -->
+
+                <div class="checkout-pro">
+                  <div class="Checkout-iconbox">
+                    <div class="MapLogo">
+                      <img src="img/Map.svg" alt="" />
+                      <p>Delivery</p>
                     </div>
-                    <div class="product-card-information">
-                      <div class="product-title">
-                        <h2>Puff Sleeves Sweetheart Neck Midi Dress</h2>
-                        <div class="card-deleted">
-                          <a href="#">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                            >
-                              <path
-                                d="M21 5.24902H17.441C16.902 5.24902 16.425 4.90502 16.255 4.39502L15.939 3.44604C15.7 2.73004 15.033 2.25 14.279 2.25H9.71997C8.96597 2.25 8.299 2.73002 8.06 3.44702L7.74402 4.39502C7.57402 4.90602 7.09698 5.25 6.55798 5.25H3C2.586 5.25 2.25 5.586 2.25 6C2.25 6.414 2.586 6.75 3 6.75H4.29797L5.065 18.25C5.196 20.213 6.83901 21.75 8.80701 21.75H15.194C17.161 21.75 18.805 20.212 18.936 18.25L19.703 6.75H21C21.414 6.75 21.75 6.414 21.75 6C21.75 5.586 21.414 5.24902 21 5.24902ZM9.48297 3.92004C9.51697 3.81804 9.61197 3.74902 9.71997 3.74902H14.279C14.387 3.74902 14.482 3.81807 14.516 3.91907L14.832 4.86804C14.876 5.00004 14.931 5.12705 14.993 5.24805H9.005C9.067 5.12605 9.12202 5.00007 9.16602 4.86707L9.48297 3.92004ZM17.438 18.149C17.36 19.327 16.374 20.249 15.193 20.249H8.80603C7.62603 20.249 6.63897 19.327 6.56097 18.149L5.80103 6.74902H6.55798C6.66498 6.74902 6.77 6.736 6.875 6.724C6.917 6.731 6.95502 6.74902 6.99902 6.74902H16.999C17.043 6.74902 17.081 6.731 17.123 6.724C17.228 6.736 17.332 6.74902 17.44 6.74902H18.197L17.438 18.149ZM14.75 10.999V15.999C14.75 16.413 14.414 16.749 14 16.749C13.586 16.749 13.25 16.413 13.25 15.999V10.999C13.25 10.585 13.586 10.249 14 10.249C14.414 10.249 14.75 10.585 14.75 10.999ZM10.75 10.999V15.999C10.75 16.413 10.414 16.749 10 16.749C9.586 16.749 9.25 16.413 9.25 15.999V10.999C9.25 10.585 9.586 10.249 10 10.249C10.414 10.249 10.75 10.585 10.75 10.999Z"
-                                fill="black"
-                              />
-                            </svg>
-                          </a>
+                    <span class="bar-check"></span>
+                    <div class="Payment-logo">
+                      <img src="img/paymentg.png" alt="" />
+
+                      <p>Payment</p>
+                    </div>
+                  </div>
+
+                  <div class="payment-method">
+                    <div class="">
+                      <a href="#"> PayPal </a>
+                      <a href="#">
+                        <img src="img/Mathod.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="img/mathod1.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="img/Mathod-2.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- ====== Response method  ===== -->
+                  <div class="response-method">
+                    <a href="#"> PayPal </a>
+                    <a href="#" class="active"> Card </a>
+                    <a href="#">
+                      <img src="img/mathod4.png" alt="" />
+                    </a>
+
+                    <a href="#">
+                      <img src="img/mathod65.png" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="checkout-form">
+                    <div class="CheckouttwoFrom mt-5">
+                      <form action="" class="row">
+                        <div class="col-12">
+                          <div class="input-box">
+                            <input type="text" placeholder="Name on Card" />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="input-box">
+                            <input type="text" placeholder="Card Number" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-box">
+                            <input type="text" placeholder="Valid Until" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-box">
+                            <input type="text" placeholder="CVV" />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- ==== Responsive Check out form ===== -->
+
+                  <div class="responsive-check-out">
+                    <form action="" class="row">
+                      <div class="input-box col-6">
+                        <input type="email" placeholder="Name on the card" />
+                      </div>
+                      <div class="input-box col-6">
+                        <input type="text" placeholder="Card Number" />
+                      </div>
+
+                      <div class="number-box col-12">
+                        <div class="number-code">
+                          <p>CVV</p>
+                        </div>
+                        <div class="number-input">
+                          <input type="text" placeholder="Expiry Date" />
                         </div>
                       </div>
-                      <div class="card-details">
-                        <h3>Brand : <span>ZARA</span></h3>
-                        <h3>
-                          Color : <span>Green</span> / Quantity :
-                          <span>1/</span> Size : <span>L</span>
-                        </h3>
-                        <h2 class="price-tag">SAR 88,99</h2>
-                        <div class="order-date d-flex align-items-center gap-1">
-                          <h4 class="d-flex align-items-center gap-2">
-                            <img src="img/package-black.svg" alt="" />
-                            Delivery by :
-                          </h4>
-                          <h4 class="date">26 Jan - 28 Jan</h4>
-                        </div>
-                      </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="order-details">
+              <div class="order-details order-checks">
                 <div class="order-content">
                   <div class="title-order">
                     <h2>Order Details</h2>
@@ -352,17 +406,8 @@
                     <h4>Shipping Fee</h4>
                     <h4 class="price-tag-e">SAR 0,00</h4>
                   </div>
-                  <div class="coupon-code">
-                    <form action="">
-                      <img src="img/coupon.jpg" alt="" />
-                      <input
-                        type="text"
-                        placeholder="Enter a Coupon or Promo code"
-                      />
-                      <button>Add</button>
-                    </form>
-                  </div>
-                  <div class="Amount d-flex justify-content-between">
+
+                  <div class="Amount d-flex justify-content-between mt-5">
                     <h3>Total Amount</h3>
                     <h3 class="Total-amount">SAR 88,99</h3>
                   </div>
@@ -371,98 +416,37 @@
                   <a href="#">Proceed to Checkout</a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- ====== Responsive Card   ====== -->
-      <div class="responsive-cart">
-        <div class="">
-          <div class="card-count">
-            <h3>1 Item</h3>
-          </div>
-          <div class="card-content">
-            <div class="d-flex align-items-center">
-              <div class="img-card">
-                <img src="img/product-5.png" alt="" />
-              </div>
-              <div class="card-content-dis">
-                <h4>Puff Sleeves Sweetheart Neck Midi Dress</h4>
-                <h5>Quantity: <span>1</span></h5>
-                <h5>Size: <span>L</span></h5>
-                <h5>Color : <span>Blue Beach</span></h5>
-                <h5>Brand : <span> ZARA</span></h5>
-              </div>
-            </div>
-            <div class="">
-              <div class="order-date d-flex align-items-center gap-1">
-                <h4 class="d-flex align-items-center gap-2">
-                  <img src="img/package-black.svg" alt="" />
-                  Delivery by :
-                </h4>
-                <h4 class="date">26 Jan - 28 Jan</h4>
-                <h2 class="price">SAR 40</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="coupon-container">
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-2">
-                <img src="img/coupon.png" alt="" />
-                <p>Enter a Coupon or Promo code</p>
-              </div>
-              <div class="onselected">
-                <a href="#">Select</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="order-details-res">
-            <div class="title">
-              <h3>Order Details</h3>
-            </div>
-            <div
-              class="d-flex price-dec align-items-center justify-content-between"
-            >
-              <p>Sub-total</p>
-              <p>SAR 40</p>
-            </div>
-            <div
-              class="d-flex price-dec align-items-center justify-content-between"
-            >
-              <p>Coupon savings</p>
-              <a href="#" class="coupon">Add Coupon</a>
-            </div>
-            <div
-              class="d-flex price-dec align-items-center justify-content-between"
-            >
-              <p>Shipping</p>
-              <p>FREE</p>
-            </div>
-            <div class="total-price-check">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4>Total Amount:</h4>
-                <div class="d-flex align-items-center gap-3">
-                  <h3>SAR 40</h3>
+              <!-- ===== Respnsive Order Details ====== -->
+              <div class="order-details-res">
+                <div
+                  class="d-flex price-dec align-items-center justify-content-between"
+                >
+                  <p>Sub-total</p>
+                  <p>SAR 40</p>
+                </div>
+                <div
+                  class="d-flex price-dec align-items-center justify-content-between"
+                >
+                  <p>Shipping</p>
+                  <p>FREE</p>
+                </div>
+                <div class="total-price-check">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h4>Total Amount:</h4>
+                    <div class="d-flex align-items-center gap-3">
+                      <h3>SAR 40</h3>
+                      <a href="#">Checkout</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="total-price-check border-0 pt-4 pb-4 cart-checkout">
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Total Amount:</h4>
-              <div class="d-flex align-items-center gap-3">
-                <h3>SAR 40</h3>
-                <a href="#">Checkout</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-      <!-- ===== -->
     </main>
 
     <script src="js/jquery-3.4.1.min.js"></script>
