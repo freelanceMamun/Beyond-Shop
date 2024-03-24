@@ -414,7 +414,13 @@
                 <p>Enter a Coupon or Promo code</p>
               </div>
               <div class="onselected">
-                <a href="#">Select</a>
+                <a
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasBottom"
+                  aria-controls="offcanvasBottom"
+                  >Select</a
+                >
               </div>
             </div>
           </div>
@@ -458,6 +464,49 @@
                 <a href="#">Checkout</a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-bottom cuponCodeCanvas"
+        tabindex="-1"
+        id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel"
+      >
+        <div class="offcanvas-header">
+          <header class="CheckOutHeader-sm">
+            <div class="pt-5">
+              <div class="shop-header-container">
+                <div class="prev-control">
+                  <a
+                    href="#"
+                    class="prev-btn"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <img src="img/arrow.svg" alt="" />
+                  </a>
+                </div>
+                <div class="catagory-title">
+                  <h3 class="text-center">Discount code</h3>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="offcanvas-body small">
+          <div class="">
+            <form action="">
+              <div class="input-box">
+                <input type="text" placeholder="Enter a coupon or promo code" />
+              </div>
+
+              <div class="button-fild">
+                <button type="submit">Add code</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

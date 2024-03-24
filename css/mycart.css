@@ -444,6 +444,38 @@
   display: none;
 }
 
+.cuponCodeCanvas {
+  height: 100vh !important;
+}
+
+.cuponCodeCanvas .input-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cuponCodeCanvas form {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.button-fild button {
+  width: 304px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #390049;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .checkout-container {
     padding-left: 1rem;
