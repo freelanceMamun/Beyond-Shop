@@ -522,6 +522,22 @@ body {
   width: 100%;
 }
 
+.product-wishlist p {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product-wishlist p img {
+  width: 30px;
+}
+.product-wishlist p.active {
+  background-color: var(--primary-color);
+}
+
 .product-wishlist a {
   display: block;
   background-color: #fff;
@@ -529,6 +545,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .product-wishlist a img {
   width: 30px;
@@ -1141,6 +1158,79 @@ footer {
 
 .responsebanner {
   display: none;
+}
+
+.owl-nav button {
+  background: transparent;
+  color: #fff;
+}
+/* ====== Modal */
+
+.popup-modal {
+  position: fixed;
+  height: 100vh;
+  background: #00000052;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+.modal-content {
+  background: #9600c1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  text-align: center;
+}
+
+.modal-close {
+  text-align: end;
+}
+
+.modal-up-content h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  text-align: center;
+}
+.modal-up-content h5 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.modal-up-content p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: center;
+}
+
+.modal-up-content button {
+  width: 275px;
+  height: 50px;
+  top: 445px;
+  left: 59px;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  background: #fff;
+  color: #390049;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 993px) and (max-width: 1140px) {
