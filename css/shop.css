@@ -23,8 +23,8 @@
   border: 1px solid #ebebeb;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+  padding-left: 15px;
 }
 
 .shop-serv a span {
@@ -53,7 +53,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.3rem;
-  margin-right: 50px;
+  margin-right: 63px;
 }
 .filter-top-heading h3 {
   color: rgba(0, 0, 0, 1);
@@ -68,7 +68,7 @@
 
 /* ==== Filter Category ==== */
 .filter-category {
-  margin-right: 70px;
+  margin-right: 120px;
 }
 .filter-category .accordion-button {
   outline: none !important;
@@ -76,6 +76,23 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+.shop-row {
+  --bs-gutter-x: 13px;
+}
+.shop-row .product_card {
+  margin-bottom: 1rem;
+}
+
+.shop-banner-inner {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.shop-left-container .accordion-header button {
+  margin-top: 16px;
+}
+
 .filter-category .accordion-button:not(.collapsed) {
   background-color: #ffffff;
   color: #000000;
@@ -581,6 +598,15 @@ input[type='checkbox'] {
   }
 }
 
+.filter-check .check-box label {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .header-response {
     display: none;
@@ -592,6 +618,67 @@ input[type='checkbox'] {
   .shop-header {
     display: block;
     padding: 0 20px;
+  }
+
+  .filter-offcanvas {
+    width: 320px !important;
+    top: 153px !important;
+  }
+
+  .filter-top-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    margin-right: 30px;
+  }
+
+  .filter-category {
+    margin-right: 40px;
+  }
+
+  .filterdropdown {
+  }
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 30px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+
+    left: 0px;
+    width: 720px;
+  }
+
+  .dropdown-filter ul {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .dropdown-filter .size {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .color-box {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .filter-category .accordion-button {
+    outline: none !important;
+    padding-left: 5px;
+    font-size: 17px;
+    font-weight: 500;
   }
   .shop-content {
     padding-left: 10px;
@@ -672,7 +759,16 @@ input[type='checkbox'] {
     display: block;
     top: 55px;
   }
+
+  .product-wishlist .save-wisthlist img {
+    width: 22px;
+  }
+
+  .product-wishlist p img {
+    width: 22px;
+  }
 }
+
 @media screen and (min-width: 641px) and (max-width: 768px) {
   .header-response {
     display: none;
@@ -699,6 +795,11 @@ input[type='checkbox'] {
   }
 }
 @media screen and (min-width: 100px) and (max-width: 640px) {
+  .shop-banner-inner {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .shop-content {
     padding-left: 8px;
     padding-right: 8px;
@@ -917,7 +1018,7 @@ input[type='checkbox'] {
     width: 220px;
   }
   .filterbutton a {
-    font-size: 11px;
+    font-size: 12px;
     color: rgba(198, 198, 198, 1);
   }
   .sm-dropdown {
@@ -1148,3 +1249,10 @@ input[type='checkbox'] {
 }
 
 /*  */
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .filter-offcanvas {
+    width: 320px !important;
+    top: 153px !important;
+  }
+}
