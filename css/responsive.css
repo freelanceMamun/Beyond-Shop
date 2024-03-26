@@ -1605,6 +1605,13 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .box-category-container {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 5px;
+  }
+}
+
 @media screen and (min-width: 100px) and (max-width: 425px) {
   .sm_banner {
     display: block;
@@ -1619,7 +1626,7 @@
     padding: 0 5px;
   }
   .cate-groy-box-inner .box-category-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
   }
 
@@ -1659,5 +1666,15 @@
   .shop_by .row > div {
     padding-left: 4px !important;
     padding-right: 4px !important;
+  }
+}
+
+@media screen and (min-width: 326px) and (max-width: 375px) {
+  .category .box-item {
+    position: relative;
+    border-radius: 5px;
+    width: 85px;
+    height: 85px;
+    margin: 5px auto;
   }
 }
