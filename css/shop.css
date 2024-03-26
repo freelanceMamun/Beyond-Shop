@@ -231,6 +231,8 @@ input[type='range']::-moz-range-thumb {
   text-transform: uppercase;
   font-size: 20px;
   width: 500px;
+  text-align: center;
+  justify-content: center;
 }
 
 /* ======   Filter  ====== */
@@ -592,10 +594,46 @@ input[type='checkbox'] {
   transform-origin: top center;
   visibility: visible;
 }
+.dropdown-filter .size li a.active {
+  background: #9600c1;
+  color: #fff;
+}
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
     display: none;
+  }
+
+  .filter-top-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    margin-right: 36px;
+  }
+  .filter-category {
+    margin-right: 78px;
+  }
+
+  .shop-serv a span {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .shop-serv a {
+    display: block;
+    width: 207px;
+    height: 60px;
+    border-radius: 9px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
   }
 }
 
@@ -623,7 +661,22 @@ input[type='checkbox'] {
 
   .filter-offcanvas {
     width: 320px !important;
-    top: 153px !important;
+    top: 164px !important;
+  }
+  .offcanvas-backdrop {
+    top: 164px;
+  }
+
+  .dropdown-filter .size li a {
+    color: #000;
+    border: 1px solid #aaaaaa;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: max-content;
+    width: 100px;
+    display: block;
+    text-align: center;
   }
 
   .filter-top-heading {
@@ -638,14 +691,12 @@ input[type='checkbox'] {
     margin-right: 40px;
   }
 
-  .filterdropdown {
-  }
   .dropdown-filter {
     position: absolute;
     background-color: #fff;
     padding: 20px 10px 10px;
     z-index: 1;
-    top: 30px;
+    top: 45px;
     border-radius: 3px;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
@@ -654,9 +705,17 @@ input[type='checkbox'] {
     visibility: hidden;
     transition: 0.2s ease;
     box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
-
-    left: 0px;
+    left: 20px;
     width: 720px;
+  }
+  .catagory-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  .catagory-list li a {
+    width: 145px !important;
+    display: block;
+    text-align: center;
   }
 
   .dropdown-filter ul {
@@ -770,9 +829,27 @@ input[type='checkbox'] {
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (min-width: 641px) and (max-width: 767px) {
   .header-response {
     display: none;
+  }
+
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 45px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 20px;
+    width: 720px;
   }
 
   .loadMorebutton {
@@ -782,7 +859,23 @@ input[type='checkbox'] {
   }
   .shop-header {
     display: block;
-    padding: 0 20px;
+    padding: 0 0px;
+  }
+  .shop-filter-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .more-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 15px;
+    position: relative;
+    padding-top: 7px;
   }
   .shop_header_main {
     display: none;
@@ -995,6 +1088,28 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 44px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 10px;
+    width: 400px;
+  }
+
+  .dropdown-filter .size {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
   .shop-left-container {
     display: none;
   }
@@ -1175,20 +1290,22 @@ input[type='checkbox'] {
     font-size: 10px;
   }
 
-  .dropdown-filter ul li a {
+  .dropdown-filter .size li a {
     color: #000;
     border: 1px solid #aaaaaa;
     padding: 4px 10px;
     border-radius: 5px;
     font-size: 11px;
-    width: max-content;
+    display: block;
+    width: 50px;
+    text-align: center;
   }
   .dropdown-filter {
     position: absolute;
     background-color: #fff;
     padding: 20px 10px 10px;
     z-index: 1;
-    top: 30px;
+    top: 40px;
     border-radius: 3px;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
@@ -1197,8 +1314,8 @@ input[type='checkbox'] {
     visibility: hidden;
     transition: 0.2s ease;
     box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
-    left: 0;
-    width: 300px;
+    left: 10px;
+    width: 290px;
   }
   .dropdown-filter .ref .Clear-button {
     color: #9600c1;
@@ -1242,6 +1359,13 @@ input[type='checkbox'] {
     display: block;
     top: 95px;
   }
+
+  .dropdown-filter .catagory-list li a {
+    width: 134px;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+  }
 }
 
 .shop-divider {
@@ -1249,11 +1373,136 @@ input[type='checkbox'] {
   background: rgba(240, 240, 240, 1);
 }
 
-/*  */
+@media screen and (min-width: 426px) and (max-width: 639px) {
+  .shop-header {
+    display: block;
+    padding: 0 0px;
+  }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 45px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 20px;
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .dropdown-filter .size li a {
+    color: #000;
+    border: 1px solid #aaaaaa;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    display: block;
+    width: 70px;
+    text-align: center;
+  }
+
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 44px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 3px;
+    width: 410px;
+  }
+
+  .more-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 12px;
+    position: relative;
+    padding-top: 7px;
+  }
+
+  .shop-header {
+    display: block;
+    padding: 0 0px;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 375px) {
   .filter-offcanvas {
     width: 320px !important;
+    top: 153px !important;
+  }
+
+  .dropdown-filter .catagory-list {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .dropdown-filter .catagory-list li a {
+    color: #000;
+    border: 1px solid #aaaaaa;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .dropdown-filter {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    z-index: 1;
+    top: 40px;
+    border-radius: 3px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(182, 182, 182, 0.2);
+    left: 10px;
+    width: 355px;
+  }
+
+  .shop-filter-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .more-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-right: 12px;
+    position: relative;
+    padding-top: 7px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 320px) {
+  .filter-offcanvas {
+    width: 260px !important;
     top: 153px !important;
   }
 }

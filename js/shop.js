@@ -98,3 +98,41 @@ shopSearchButton.addEventListener('click', (e) => {
   e.preventDefault('');
   document.querySelector('.shop_search').classList.toggle('active-search-shop');
 });
+
+//=== Active filter
+const doneButton = document.querySelectorAll('.done-button');
+const sizeFilteractive = document.querySelectorAll(
+  '.dropdown-filter .size li a'
+);
+
+sizeFilteractive.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active');
+
+    toggleItem(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      toggleItem(showDropdown);
+    }
+  });
+});
+
+const sizeFilter = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active')) {
+    item.classList.remove('active');
+  } else {
+    item.classList.add('active');
+  }
+};
+
+doneButton.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active-btn');
+
+    showDropdown.classList.remove('active-btn');
+  });
+});
