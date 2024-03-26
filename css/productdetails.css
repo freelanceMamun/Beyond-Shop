@@ -201,7 +201,7 @@
   color: #fff;
 }
 .Purchase:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .responsive-start {
