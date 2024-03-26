@@ -538,7 +538,8 @@ body {
   background-color: var(--primary-color);
 }
 
-.product-wishlist a {
+.product-wishlist .save-wisthlist,
+.product-wishlist .save-card {
   display: block;
   background-color: #fff;
   padding: 10px;
@@ -547,10 +548,10 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.product-wishlist a img {
+.product-wishlist .save-wisthlist img {
   width: 30px;
 }
-.product-wishlist a.active {
+.product-wishlist .save-wisthlist.active {
   background-color: var(--primary-color);
 }
 
@@ -563,7 +564,7 @@ body {
   bottom: 4%;
   right: 5%;
 }
-.product-offer a {
+.product-offer .offer-btns {
   background-color: var(--primary-color);
   display: block;
   color: #fff;
@@ -594,12 +595,15 @@ body {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 5px;
+
+  color: #000;
 }
 
 .short-disription {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 5px;
+  color: #000;
 }
 
 .rattings-start {

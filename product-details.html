@@ -281,9 +281,47 @@
       <!-- ===== Product  Description  ===== -->
       <div class="product-info">
         <div class="header-container">
-          <div class="row product-information-details">
-            <div class="col-lg-7 col-12 col-md-6">
-              <!-- <img class="w-100 h-100" src="img/banner-1.png" alt="" /> -->
+          <div class="row product-information-details align-items-center">
+            <div class="col-lg-7 col-12 col-md-6 position-relative">
+              <div class="d-flex pro-duct-slides">
+                <div class="left-imgs">
+                  <a href="#">
+                    <img src="img/product-4.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/product-5.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/product-5.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/product-5.png" alt="" />
+                  </a>
+                </div>
+                <div class="w-100 overflow-hidden product-slider owl-carousel">
+                  <img src="img/product-4.png" alt="" />
+                  <img src="img/product-5.png" alt="" />
+                </div>
+
+                <div class="product-offer">
+                  <a href="#" class="offer-btns">
+                    <img src="img/discount.svg" alt="" />
+                    <span>40%</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="shop-card">
+                <a href="#">
+                  <img src="img/iconShop.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="img/icon-heart.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="img/link.svg" alt="" />
+                </a>
+              </div>
             </div>
             <div class="col-lg-5 col-md-6 col-12">
               <div class="pro-information">
@@ -354,6 +392,15 @@
                       <a href="#" style="background-color: #c90000"> </a>
                       <a href="#" style="background-color: #176793"> </a>
                     </div>
+                    <!-- ==== Product img slide ==== -->
+                    <div class="d-flex produc-slide-img-sm">
+                      <a href="#">
+                        <img src="img/product-4.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="img/product-5.png" alt="" />
+                      </a>
+                    </div>
                     <div
                       class="product-pric d-flex justify-content-start pt-2 pb-2"
                     >
@@ -382,8 +429,8 @@
                   <!-- =====  Addto Card  ===== -->
 
                   <div class="add-button-inner">
-                    <a href="#" class="add-to">Add To Cart</a>
-                    <a href="#" class="Purchase">Purchase Now</a>
+                    <a href="MyCart.html" class="add-to">Add To Cart</a>
+                    <a href="MyCart.html" class="Purchase">Purchase Now</a>
                   </div>
 
                   <div class="add-cart-sticky">
@@ -462,178 +509,187 @@
           </div>
           <div class="row pt-4 pb-4">
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-2.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="product-details.html">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-2.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-1.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="#">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-1.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-3.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="product-details.html">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-3.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -649,178 +705,187 @@
           </div>
           <div class="row pt-4 pb-4">
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-2.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="product-details.html">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-2.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-1.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="product-details.html">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-1.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4 col-md-6 col-6">
-              <div class="product_card">
-                <div class="product-content">
-                  <div class="product_image">
-                    <img src="img/product-3.png" alt="" />
-                  </div>
-                  <div class="product-wishlist">
-                    <a href="#" class="save-wisthlist">
-                      <img src="img/icon-heart.svg" class="unlike" alt="" />
-                      <img src="img/like.png" class="like" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/iconShop.svg" alt="" />
-                    </a>
-                  </div>
-                  <div class="product-offer">
-                    <a href="#">
-                      <img src="img/discount.svg" alt="" />
-                      <span>40%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-discription">
-                  <h3 class="title">ZARA</h3>
-                  <p class="short-disription">
-                    Emerald Green Unisex Oversize Zipper tand Collar Sleeves ...
-                  </p>
-                  <div class="rattings-start">
-                    <ul class="rattings">
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                      <li>
-                        <img src="img/star-Filled.svg" alt="" />
-                      </li>
-                    </ul>
-                    <p class="point">5.0/5.0</p>
-                  </div>
-                  <div class="product-price pt-2 pb-2">
-                    <div class="old-price">
-                      <p>SAR 99,99</p>
+              <a href="product-details.html">
+                <div class="product_card">
+                  <div class="product-content">
+                    <div class="product_image">
+                      <img src="img/product-3.png" alt="" />
                     </div>
-                    <div class="current-price">
-                      <p>SAR 69,99</p>
+                    <div class="product-wishlist">
+                      <p href="#" class="save-wisthlist">
+                        <img src="img/icon-heart.svg" class="unlike" alt="" />
+                        <img src="img/like.png" class="like" alt="" />
+                      </p>
+                      <p href="#" class="save-card">
+                        <img src="img/iconShop.svg" alt="" />
+                      </p>
+                    </div>
+                    <div class="product-offer">
+                      <p href="#" class="offer-btns">
+                        <img src="img/discount.svg" alt="" />
+                        <span>40%</span>
+                      </p>
                     </div>
                   </div>
+                  <div class="product-discription">
+                    <h3 class="title">ZARA</h3>
+                    <p class="short-disription">
+                      Emerald Green Unisex Oversize Zipper tand Collar Sleeves
+                      ...
+                    </p>
+                    <div class="rattings-start">
+                      <ul class="rattings">
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                        <li>
+                          <img src="img/star-Filled.svg" alt="" />
+                        </li>
+                      </ul>
+                      <p class="point">5.0/5.0</p>
+                    </div>
+                    <div class="product-price pt-2 pb-2">
+                      <div class="old-price">
+                        <p>SAR 99,99</p>
+                      </div>
+                      <div class="current-price">
+                        <p>SAR 69,99</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -907,5 +972,19 @@
       type="text/javascript"
     ></script>
     <script src="js/main.js"></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: false,
+        center: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash',
+      });
+    </script>
   </body>
 </html>
