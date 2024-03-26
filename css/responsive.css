@@ -1385,11 +1385,17 @@
   }
 
   .lust-banner-end .row {
-    --bs-gutter-x: 8px;
+    --bs-gutter-x: 5px;
   }
   .banner-by-title h4 {
-    font-size: 12px;
+    font-size: 23px;
+    margin-bottom: 1.2rem;
   }
+
+  .bg-overlay-left .banner-by-title h4 {
+    margin-bottom: 2rem !important;
+  }
+
   .banner-by-title a {
     font-size: 15px;
   }
@@ -1398,7 +1404,7 @@
     height: 30px;
   }
   .bg-overlay-right::before {
-    height: 60px;
+    height: 130px;
   }
 
   /* ==== Product Card  ===== */
@@ -1437,10 +1443,10 @@
   .save-card img {
     width: 16px;
   }
-  .product-wishlist .save-card img{
+  .product-wishlist .save-card img {
     width: 20px;
   }
-  .product-wishlist .save-wisthlist, 
+  .product-wishlist .save-wisthlist,
   .product-wishlist .save-card {
     display: block;
     background-color: #fff;
@@ -1449,8 +1455,7 @@
     margin-right: 20px;
     border-radius: 50%;
     cursor: pointer;
-}
-
+  }
 
   .product-wishlist .save-wisthlist {
     display: block;
@@ -1576,6 +1581,18 @@
   .brand-section-h {
     display: none;
   }
+
+  .our_collection .row {
+    --bs-gutter-x: 7px;
+  }
+
+  .our_collection .row > div {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .our_collectionbox {
+margin-bottom: 7px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1584,7 +1601,7 @@
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 400px) {
+@media screen and (min-width: 100px) and (max-width: 425px) {
   .sm_banner {
     display: block;
   }
@@ -1611,5 +1628,32 @@
   }
   .brand-section-h {
     display: none;
+  }
+
+  .categories-inner .header-container {
+    padding-bottom: 6px !important;
+    padding-top: 10px !important;
+    background: #f5f5f5;
+    margin-top: 6px;
+  }
+
+  .sale-brand .row {
+    --bs-gutter-x: 7px;
+  }
+  .sale-brand .row > div {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .sale-brand {
+    margin-top: 2rem;
+  }
+  .shop_by .row {
+    --bs-gutter-x: 7px;
+  }
+
+  .shop_by .row > div {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
   }
 }

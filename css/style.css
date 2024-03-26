@@ -734,6 +734,10 @@ footer {
   font-weight: 400;
   font-size: 24px;
 }
+
+.contact-information .information a:hover {
+  color: #9600c1;
+}
 .usefulllinks ul {
   display: flex;
   align-items: center;
@@ -744,6 +748,9 @@ footer {
   color: var(--text-color);
   font-weight: 400;
   font-size: 22px;
+}
+.usefulllinks ul li a:hover {
+  color: var(--primary-color);
 }
 
 .navigation-menu {
@@ -757,6 +764,10 @@ footer {
   color: var(--text-color);
   padding: 5px 0;
   display: inline-block;
+}
+
+.navigation-menu ul li a:hover {
+  color: var(--primary-color);
 }
 
 .trams p {
