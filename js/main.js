@@ -253,3 +253,5 @@ rangeInput.forEach((input) => {
 //   e.preventDefault('');
 //   document.querySelector('.shop_search').classList.toggle('active-search-shop');
 // });
+
+//=== Active Navtigtion

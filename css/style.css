@@ -777,6 +777,19 @@ footer {
 }
 /* =========  Footer ======== */
 
+/* == Nav Menu  == */
+.nav__item-link img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(6716%)
+    hue-rotate(237deg) brightness(92%) contrast(108%);
+}
+.nav__item-link.active img {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(85%) saturate(7480%)
+    hue-rotate(288deg) brightness(85%) contrast(108%);
+}
+
+.nav__item-link.active .nav__item-text {
+  color: var(--primary-color);
+}
 /* ------ drop down */
 
 .select-menu {
