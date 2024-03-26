@@ -342,6 +342,10 @@
   margin-bottom: 8px;
 }
 
+.add-button-inner a:hover {
+  color: #9600c1;
+}
+
 @media screen and (min-width: 1600px) {
   .product-slider img {
     height: 745px !important;
@@ -480,7 +484,7 @@
     width: 100%;
   }
 
-  .left-imgs img{
+  .left-imgs img {
     width: 100%;
   }
 

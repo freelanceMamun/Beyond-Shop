@@ -1578,6 +1578,10 @@
     border-radius: 10px;
   }
 
+  .hero_area .owl-carousel .owl-item img {
+    height: 230px !important;
+  }
+
   .brand-section-h {
     display: none;
   }
