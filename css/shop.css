@@ -599,6 +599,11 @@ input[type='checkbox'] {
   color: #fff;
 }
 
+.dropdown-filter .catagory-list li a.active {
+  background: #9600c1;
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
     display: none;

@@ -101,11 +101,28 @@ shopSearchButton.addEventListener('click', (e) => {
 
 //=== Active filter
 const doneButton = document.querySelectorAll('.done-button');
+
 const sizeFilteractive = document.querySelectorAll(
   '.dropdown-filter .size li a'
 );
+const catagoryList = document.querySelectorAll(
+  '.dropdown-filter .catagory-list li a'
+);
 
 sizeFilteractive.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active');
+
+    toggleItem(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      toggleItem(showDropdown);
+    }
+  });
+});
+
+catagoryList.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const showDropdown = document.querySelector('.active');
