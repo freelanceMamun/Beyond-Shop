@@ -623,8 +623,54 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1204px) {
+  .shop-left-container {
+    display: none;
+  }
+
+  .shop-right-heading-content {
+    display: none;
+  }
+
+  .shop-header {
+    display: block;
+    padding: 0 0px;
+  }
+  .shop-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
+    display: none;
+  }
+
+  .shop-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .shop-left-container {
+    display: none;
+  }
+
+  .shop-header {
+    display: block;
+    padding: 0 0px;
+  }
+
+  .shop-right-heading-content {
     display: none;
   }
 
