@@ -632,6 +632,10 @@ input[type='checkbox'] {
     display: block;
   }
 
+  .shop-pages .shop-right-heading-content {
+    display: block;
+  }
+
   .shop-right-heading-content {
     display: none;
   }
