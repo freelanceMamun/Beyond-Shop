@@ -1257,6 +1257,9 @@
   .sm_banner {
     display: block;
   }
+  .popup-modal.active-popup {
+    display: flex;
+  }
 
   .shop_brand .shop_brand_box img {
     height: 243px;
@@ -1656,6 +1659,10 @@
 @media screen and (min-width: 100px) and (max-width: 425px) {
   .sm_banner {
     display: block;
+  }
+
+  .popup-modal.active-popup {
+    display: flex;
   }
 
   .Categoires-top .container-cum {

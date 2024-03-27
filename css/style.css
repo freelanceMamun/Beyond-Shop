@@ -1209,9 +1209,6 @@ footer {
   padding-right: 10px;
   display: none;
 }
-.popup-modal.active-popup {
-  display: flex;
-}
 
 .modal-content {
   background: #9600c1;
@@ -1273,6 +1270,10 @@ footer {
     height: 220px;
   }
 
+  .popup-modal {
+    display: none;
+  }
+
   .category .box-item h5 {
     font-size: 25px;
     font-weight: 600;
@@ -1329,6 +1330,7 @@ footer {
     width: auto;
     height: 165px;
   }
+
   .category .box-item h5 {
     font-size: 22px;
     font-weight: 600;
@@ -1378,6 +1380,10 @@ footer {
     object-fit: cover;
     border-radius: 5px;
   }
+
+  .popup-modal.active-popup {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 320px) {
@@ -1386,5 +1392,9 @@ footer {
     height: 110px;
     object-fit: cover;
     border-radius: 5px;
+  }
+
+  .popup-modal.active-popup {
+    display: flex;
   }
 }
