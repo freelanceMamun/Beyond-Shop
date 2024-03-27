@@ -1209,6 +1209,9 @@ footer {
   padding-right: 10px;
   display: none;
 }
+.popup-modal.active-popup {
+  display: flex;
+}
 
 .modal-content {
   background: #9600c1;
@@ -1217,6 +1220,7 @@ footer {
   border-radius: 16px;
   border: 3px solid #fff;
   text-align: center;
+  margin: 0.8rem;
 }
 
 .modal-close {

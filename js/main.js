@@ -306,3 +306,18 @@ const size = (item) => {
     item.classList.add('active');
   }
 };
+
+// Pop Modal
+
+const popModal = document.querySelector('.popup-modal');
+const closeModal = document.querySelector('.modal-close a');
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    popModal.classList.add('active-popup');
+  }, 2000);
+});
+
+closeModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  popModal.classList.remove('active-popup');
+});

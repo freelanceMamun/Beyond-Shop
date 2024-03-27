@@ -628,14 +628,19 @@ input[type='checkbox'] {
     display: none;
   }
 
+  .shop-pages .shop-left-container {
+    display: block;
+  }
+
   .shop-right-heading-content {
     display: none;
   }
 
-  .shop-header {
+  .new-shop {
     display: block;
     padding: 0 0px;
   }
+
   .shop-header-container {
     display: flex;
     align-items: center;
