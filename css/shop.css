@@ -683,7 +683,7 @@ input[type='checkbox'] {
     display: block;
     text-align: center;
   }
-
+ 
   .filter-top-heading {
     display: flex;
     justify-content: space-between;
@@ -736,7 +736,7 @@ input[type='checkbox'] {
   .color-box {
     display: grid;
     gap: 7px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 
   .filter-category .accordion-button {

@@ -254,4 +254,41 @@ rangeInput.forEach((input) => {
 //   document.querySelector('.shop_search').classList.toggle('active-search-shop');
 // });
 
+const selectedSize = document.querySelectorAll('.sizebtn a');
+const colorbtn = document.querySelectorAll('.colors-varient .colorbtn a');
 
+selectedSize.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active');
+
+    size(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      size(showDropdown);
+    }
+  });
+});
+
+colorbtn.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active');
+
+    size(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      size(showDropdown);
+    }
+  });
+});
+
+const size = (item) => {
+  // 3.1. Select each dropdown content
+
+  if (item.classList.contains('active')) {
+    item.classList.remove('active');
+  } else {
+    item.classList.add('active');
+  }
+};
