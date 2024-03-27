@@ -616,6 +616,13 @@ input[type='checkbox'] {
   color: #fff;
 }
 
+.Gender ul li label {
+  color: #000;
+  font-size: 18px;
+  margin: 3px 0;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
     display: none;
