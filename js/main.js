@@ -256,6 +256,7 @@ rangeInput.forEach((input) => {
 
 const selectedSize = document.querySelectorAll('.sizebtn a');
 const colorbtn = document.querySelectorAll('.colors-varient .colorbtn a');
+const SizeBox = document.querySelectorAll('.filter-offcanvas  .size-box a');
 
 selectedSize.forEach((button) => {
   button.addEventListener('click', (e) => {
@@ -271,6 +272,19 @@ selectedSize.forEach((button) => {
 });
 
 colorbtn.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const showDropdown = document.querySelector('.active');
+
+    size(button);
+    // Remove the show-dropdown class from other items
+    if (showDropdown && showDropdown !== button) {
+      size(showDropdown);
+    }
+  });
+});
+
+SizeBox.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const showDropdown = document.querySelector('.active');

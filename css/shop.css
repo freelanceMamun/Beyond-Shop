@@ -604,6 +604,18 @@ input[type='checkbox'] {
   color: #fff;
 }
 
+.size-box a {
+  color: #000000;
+  font-size: 17px;
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  padding: 4px;
+}
+.size-box a.active {
+  background: #9600c1;
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .shop-header {
     display: none;

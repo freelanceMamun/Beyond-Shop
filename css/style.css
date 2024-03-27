@@ -576,7 +576,7 @@ body {
 }
 .product_image img {
   width: 100%;
-  height: 610px;
+  /* height: 610px; */
   max-width: 100%;
   margin: auto;
   display: block;
@@ -1082,7 +1082,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 0;
   gap: 15px;
 }
 .banner-thum h3 {

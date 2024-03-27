@@ -356,6 +356,10 @@
   color: #9600c1;
 }
 
+.lustchild {
+  display: none;
+}
+
 @media screen and (min-width: 1600px) {
   .product-slider img {
     height: 745px !important;
@@ -480,6 +484,9 @@
     flex-direction: column-reverse;
   }
 
+  .lustchild {
+    display: block;
+  }
   .owl-carousel .owl-item img {
     height: 500px !important;
     object-fit: cover;
@@ -704,6 +711,10 @@
     display: flex;
     align-self: center;
     gap: 7px;
+  }
+
+  .lustchild {
+    display: block;
   }
 
   .pro-titled h3 span {
@@ -996,6 +1007,10 @@
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .left-imgs {
     display: none;
+  }
+
+  .lustchild {
+    display: block;
   }
 
   .brand-banner-singleproduct {
@@ -1312,6 +1327,10 @@
     display: none;
   }
 
+  .lustchild {
+    display: block;
+  }
+
   .product-information-details .product-offer {
     z-index: 1;
     top: 10%;
@@ -1601,6 +1620,10 @@
   .left-imgs {
     display: none;
   }
+
+  .lustchild {
+    display: block;
+  }
   .product-information-details {
     margin-top: 0;
   }
@@ -1661,6 +1684,9 @@
     display: none;
   }
 
+  .lustchild {
+    display: block;
+  }
   .left-imgs {
     display: none;
   }
