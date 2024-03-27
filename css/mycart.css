@@ -476,6 +476,11 @@
   border: none;
 }
 
+/* = Emty card === */
+.card-img img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .checkout-container {
     padding-left: 1rem;
