@@ -1021,7 +1021,7 @@
     padding-right: 4px;
   }
   .product_image img {
-    height: 240px;
+    height: auto;
   }
 
   .product_card .current-price p {
