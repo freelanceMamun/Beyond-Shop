@@ -1342,7 +1342,7 @@
 
   .add-cart-sticky {
     position: fixed;
-    bottom: 3%;
+    bottom: 1%;
     width: 90%;
     z-index: 9;
     padding: 10px 10px;
@@ -1627,7 +1627,7 @@
 
   .add-cart-sticky {
     position: fixed;
-    bottom: 3%;
+    bottom: 1%;
     width: 90%;
     z-index: 9;
     padding: 10px 10px;

@@ -1111,7 +1111,7 @@ footer {
 .category .box-item {
   position: relative;
   border-radius: 5px;
-  width: 90px;
+  width: auto;
   height: 90px;
 }
 
@@ -1171,15 +1171,15 @@ footer {
 }
 
 .branding-image {
-  display: flex;
+  display: grid;
   align-items: center;
   gap: 10px;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
   margin-top: -15px;
 }
 .branding-image img {
-  width: 90px;
-  height: 110px;
+  width: 100%;
+  height: 125px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -1322,7 +1322,7 @@ footer {
   .category .box-item {
     position: relative;
     border-radius: 5px;
-    width: 165px;
+    width: auto;
     height: 165px;
   }
   .category .box-item h5 {
